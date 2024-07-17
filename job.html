@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <form action="main.java" method="get"></form>
+    <fieldset>
+        <legend>My details</legend>
+        <input type="text" id="fname" placeholder="First Name" name="fname" required minlength="6" maxlength="10">
+    <input type="text" id="lname" placeholder="Last Name" name="lname" value="singh" readonly>
+    </fieldset>
+    
+    <input type="text" id="fname" placeholder="First Name" name="fname" required minlength="6" maxlength="10">
+    <input type="text" id="lname" placeholder="Last Name" name="lname" value="singh" readonly>
+    <!--Regular expressions are used-->
+    <input type="email" name="em" id="em" placeholder="Enter email" required pattern="[A-Zaa-z]{5}"><br><br>
+    <input type="number" name="age" placeholder="Enter age" min="18"><br><br>
+    <input type="radio" name="gender" id="male"><label for="male">Male</label>
+    <input type="radio" name="gender" id="female"><label for="female">Female</label><br><br>
+    <label>Languages Known:</label>
+    <input type="checkbox" name="lang" id="tamil"><label for="tamil">tamil</label>
+    <input type="checkbox" name="lang" id="telugu"><label for="telugu">telugu</label>
+    <!-- drop down-->
+     <label >Select State</label>
+     <select name="state" >
+        <option value="AP">AP</option>
+        <option value="TS">TS</option>
+        <option value="Kerala">Kerala</option>
+     </select>
+     <!--Multi selectes-->
+     <label >Prefered location</label>
+     <select multiple size="2">
+        <optgroup label="Telangana"><option value="HYD">HYD</option></optgroup>
+    
+        <option value="kochi">kochi</option>
+        <option value="Arabian">Arabian</option>
+        <optgroup label="Goa"> <option value="Goa">Goa</option></optgroup>
+        
+        <option value="chennai">chennai</option>
+        <option value="Indigo">Indigo</option>
+        <option value="Mumbai">Mumbai</option>
+        <option value="Pune">Pune</option>
+        <option value="Noida">Noida</option>
+        <option value="Nagpur">Nagpur</option>
+     </select><br><br>
+     <input type="text" name="jobname" value="developer" disabled><br><br>
+
+     <label for=""></label>
+
+</body>
+</html>

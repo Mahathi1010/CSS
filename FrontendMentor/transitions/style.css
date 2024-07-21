@@ -1,0 +1,32 @@
+*{
+    box-sizing:border-box;
+}
+.main{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+}
+
+
+.box{
+    height:100px;
+    width:100px;
+    background-color: red;
+    transition-property:height width background-color;/*orelse we can write all */
+    transition-duration: 3s;
+   /* transition-delay:5s;*/
+    transition-timing-function: linear;
+    /*transition:all 5s ease 1s;*/
+}
+
+/*tranasition is changing one state to another*/
+.box:hover{
+    height:200px;
+    width:200px;
+    background-color: blue;
+    transform:rotate(45deg);
+    /*transform:translateX(100px);*/
+    /*transform:scale(1.5);
+    clip-path:circle(20px);*/
+    /*animation is multiple transitions*/
+}
